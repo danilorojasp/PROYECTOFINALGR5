@@ -1,0 +1,81 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Site.master.cs" Inherits="SiteMaster" %>
+
+<!DOCTYPE html>
+<html>
+<head runat="server">
+    <title>ASP.NET Doctor Appointment Scheduling</title>
+    <link href="~/Media/layout.css" rel="stylesheet" type="text/css" />
+    <link href='media/custom.css' type="text/css" rel="stylesheet" /> 
+    <script src="js/daypilot-modal-2.2.js"></script>
+
+    <asp:ContentPlaceHolder ID="HeadContent" runat="server"></asp:ContentPlaceHolder>
+    <style type="text/css">
+
+        .auto-style1 {
+            font-size: large;
+        }
+        .auto-style2 {
+            text-decoration: none;
+            color: #FFFFFF;
+        }
+        .auto-style3 {
+            font-weight: normal;
+            text-align: center;
+        }
+        .auto-style4 {
+            font-size: medium;
+        }
+        .auto-style5 {
+            width: 197px;
+            height: 103px;
+            margin-right: 2px;
+            margin-bottom: 0px;
+            margin-top: 0px;
+        }
+        .auto-style6 {
+            color: #CC3300;
+        }
+        .auto-style7 {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <form runat="server">
+    <div class="page">
+        <div id="header">
+			<div class="bg-help">
+				<div class="inBox">
+					<h1 id="logo" class="auto-style7"><strong><span class="auto-style1">
+                        <img alt="" class="auto-style5" src="https://www.iess.gob.ec/afi-fondos-web/iess-skin-resources?file=/img/plantilla/logo.png" /></span></strong></h1>
+                    <h1 class="auto-style3"><a href='http://code.daypilot.org/55027/asp.net-doctor-appointment-scheduling' class="auto-style2"><strong>SISTEMA DE RESERVA DE CITAS</strong></a></h1>
+					<p id="claim" class="auto-style7">&nbsp;<span class="auto-style4">CLINICA DE CURACIONES</span></p>
+        <div class="shadow"></div>
+					<hr class="hidden" />
+				</div>
+			</div>
+        </div>
+        <div class="main">
+            <div class="space">
+                <a href="Default.aspx"><span class="auto-style4">Pacientes</span></a><span class="auto-style4">
+                |
+                <a href="Doctor.aspx">Doctor</a>
+                |
+                
+                </span>
+                <a href="Manager.aspx"><span class="auto-style4">Administrador</span></a>
+                |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+                <a href="RegistroPaciente.aspx" class="auto-style6"><strong><span class="auto-style4">Soy Paciente Nuevo</span></strong></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                
+            </div>
+            <asp:ContentPlaceHolder ID="MainContent" runat="server"/>
+        </div>
+        <div class="clear">
+        </div>
+    </div>
+    <div class="footer">
+        
+    </div>
+    </form>
+</body>
+</html>
